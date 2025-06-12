@@ -1,0 +1,150 @@
+:root{
+    --cor-padrao: #FFFFFF;
+    --cor-forte: #C08834;
+    --cor-fraca: #F9F9F9;
+    --cor-fraquissima: #C0C0C0;
+    --cor-de-fundo: #000000;
+    --fonte: "Inter"
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte);
+}
+
+.principal{
+    height: 100vh;
+    background-image: url(img/FundoPadrePaulo.png);
+    color: var(--cor-padrao);
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    margin-left: 3.5em;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.laranja{
+    color: var(--cor-forte);
+}
+
+.container__botao{
+    background-color: var(--cor-forte);
+    border-radius: 8px;
+    padding: 1em;
+    text-decoration: none;
+    color: var(--cor-padrao);
+    display: block;
+    font-size: 16px;
+    margin: 1.5em 0 0.5em 0;
+}
+
+.botao_secundario{
+    background-color: transparent;
+    border: 1.5px solid var(--cor-forte);
+    color: var(--cor-forte);
+}
+
+.container__aviso{
+    font-size: 12px;
+    color: var(--cor-fraquissima);
+}
+
+.container__titulo{
+    font-size: 28px;
+    margin-top: 3.5em;
+}
+
+.container__imagem{
+    width: 7em;
+    margin: 2em 0 0.5em 0;
+}
+
+.container_fraselogoprincipal{
+    font-size: 25px;
+    color: var(--cor-padrao);
+}
+
+.container__fraselogo{
+    color: var(--cor-fraquissima);
+    font-size: 13px;
+}
+
+.secundario{
+    grid-template-columns: 50% 50%;
+}
+
+.central_vertical{
+    text-align: center;
+}
+
+.central_horizontal{
+    align-content: center;
+}
+
+.secundario__imagem{
+    width: 60%;
+}
+
+.secundario__titulo{
+    font-size: 40px;
+    margin: 0.5em 0 0.1em 0;
+}
+
+.titulo__descricao{
+    color: var(--cor-fraca);
+    font-size: 20px;
+}
+
+#terciario__div{
+    margin: 0 0 0 7em;
+}
+
+section{
+    margin-bottom: 20vh;
+}
+
+.lista__dispositivos{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    list-style-type: none;
+}
+
+.dispositivos{
+    text-align: center;
+    font-size: 20px;
+}
+
+.logo_final{
+    text-align: center;
+}
+
+.rodape{
+    text-align: center;
+} 
+
+.footer__list{
+    display: flex;
+    justify-content: center;
+}
+
+.footer__text{
+    color: var(--cor-fraquissima);
+    margin: 0 25em;
+}
+
+.lista_link a{
+    text-decoration: none;
+    list-style: none;
+    margin-left: 1em;
+    color: var(--cor-fraca);
+}
